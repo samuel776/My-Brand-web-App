@@ -1,102 +1,116 @@
-.topnav {
-    background-color: #458458;
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.topnav  {
-    display: flex;
-    color:black;
-    padding: 14px 16px;
-    font-size: 25px;
-    align-items:center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left:0;
-    right:0;
-    width: 100%;
-    height:30px;
-   
-  }
-  .topnav a {
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    
-  }
-  .topnav i{
-      color:white;
-      font-size:40px;
-     
-  }
-  footer{
-      
-      background-color:#99D1AA;
-     width: 100%;
-      
-    
-  }
-  img{
-      padding-bottom: 100px;
-      padding-top: 100px;
-      margin:auto;
-      max-width: 100%;
-      height: auto;
-    
-  }
-  .content{
-      position: absolute;
-      top: 50%;
-      left: 40%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      font-size: 25px;
-      
-  }
-  main a{
-      text-decoration: none;
-      color:black ;
-      background-color: #458458;
-      position: absolute;
-      top: 65%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      border: 2px solid black;
-      height:50px;
-      border-radius: 12px;
-     
-      
-      
-  }
-  .h4{
-      display:flex;
-      justify-content: space-between;
-      padding: 15px 15px;
-      font-size:20px;
-  }
-  .sub{
-      display:flex;
-      justify-content:space-between;
-      padding: 15px 15px;
-      font-size: 15px;
 
-  }
-  .sub input{
-    margin: 5px 10px 5px 0;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius:12px;
-  }
-  .copy{
-      text-align:center;
-     padding-bottom:15px;
-  }
-  .icons{
-      color:white;
-      font-size:40px;
-      
-  }
-  
+.topnav {
+  background-color: #458458;
+  overflow: hidden;
+  display: flex;
+  color: black;
+  padding: 14px 16px;
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 65px;
+}
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.topnav a:hover {
+  background-color: #99d1aa;
+  border-radius: 12px;
+}
+.topnav i {
+  color: white;
+  font-size: 40px;
+}
+footer {
+  background-color: #99d1aa;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+main a {
+  text-decoration: none;
+  color: black;
+  background-color: #458458;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+}
+main a:hover {
+  background-color: #99d1aa;
+}
+
+.sub {
+  font-size: 20px;
+  margin: 20px 80px;
+}
+.sub input {
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+}
+.copy {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: #99d1aa;
+}
+.icons {
+  color: white;
+  font-size: 30px;
+  margin: 20px 80px;
+}
+.icons h4 {
+  color: black;
+  font-size: 20px;
+}
+.button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #99d1aa;
+  font-size: 35px;
+}
+button:hover {
+  background-color: #458458;
+  border-radius: 8px;
+  outline: none;
+}
