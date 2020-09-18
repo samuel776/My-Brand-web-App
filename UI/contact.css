@@ -59,6 +59,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #99d1aa;
+  color: black;
+  font-weight: bold;
 }
 
 .container {
@@ -113,7 +115,7 @@ footer {
   font-size: 35px;
 }
 button:hover {
-  background-color: #518b63;
+  /* background-color: #518b63; */
   border-radius: 8px;
   outline: none;
 }
