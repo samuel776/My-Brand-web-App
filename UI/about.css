@@ -70,7 +70,7 @@ footer {
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 12px;
+  border-radius: 6px;
   outline: none;
 }
 .copy {
@@ -96,7 +96,7 @@ footer {
   font-size: 35px;
 }
 button:hover {
-  background-color: #458458;
+  background-color: #427551;
   border-radius: 8px;
   outline: none;
 }
