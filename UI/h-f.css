@@ -42,41 +42,6 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
-img {
-  padding-bottom: 100px;
-  padding-top: 100px;
-  margin: auto;
-  max-width: 100%;
-  height: auto;
-}
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-}
-main a {
-  text-decoration: none;
-  color: white;
-  background-color: #458458;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border: 2px solid black;
-  height: 50px;
-  border-radius: 12px;
-  line-height: 50px;
-}
-main a:hover {
-  background-color: #99d1aa;
-  color: black;
-}
-
 .sub {
   font-size: 20px;
   margin: 20px 80px;
@@ -110,9 +75,10 @@ main a:hover {
   cursor: pointer;
   background-color: #99d1aa;
   font-size: 35px;
+  outline: none;
 }
+
 button:hover {
-  background-color: #458458;
   border-radius: 8px;
   outline: none;
 }
