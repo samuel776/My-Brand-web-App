@@ -8,7 +8,7 @@
   background-color: #458458;
   overflow: hidden;
   display: flex;
-  color: white;
+  color: black;
   padding: 14px 16px;
   font-size: 25px;
   align-items: center;
@@ -22,7 +22,7 @@
   height: 65px;
 }
 .topnav a {
-  color: white;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -31,50 +31,53 @@
 .topnav a:hover {
   background-color: #99d1aa;
   border-radius: 12px;
-  color: black;
 }
 .topnav i {
   color: white;
   font-size: 40px;
 }
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #458458;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #99d1aa;
+  color: black;
+  font-weight: bold;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  width: 600px;
+  margin: 10% 25%;
+}
+.container h3 {
+  font-size: 26px;
+  padding-bottom: 15px;
+}
+
 footer {
   background-color: #99d1aa;
   display: flex;
   justify-content: space-between;
-}
-
-img {
-  padding-bottom: 100px;
-  padding-top: 100px;
-  margin: auto;
-  max-width: 100%;
-  height: auto;
-}
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-}
-main a {
-  text-decoration: none;
-  color: white;
-  background-color: #458458;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border: 2px solid black;
-  height: 50px;
-  border-radius: 12px;
-  line-height: 50px;
-}
-main a:hover {
-  background-color: #99d1aa;
-  color: black;
 }
 
 .sub {
@@ -112,7 +115,7 @@ main a:hover {
   font-size: 35px;
 }
 button:hover {
-  background-color: #458458;
+  /* background-color: #518b63; */
   border-radius: 8px;
   outline: none;
 }

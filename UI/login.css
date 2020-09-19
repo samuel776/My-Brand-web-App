@@ -1,0 +1,59 @@
+main {
+  margin-top: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 8px;
+  outline: none;
+}
+
+.cancelbtn {
+  background-color: #a5342c;
+  padding: 10px 30px;
+  margin-left: 12px;
+  width: 45%;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.cancelbtn:hover {
+  background-color: rgb(243, 70, 70);
+}
+
+.loginbtn {
+  background-color: #458458;
+  padding: 10px 30px;
+  width: 45%;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.loginbtn:hover {
+  background-color: #99d1aa;
+}
+
+#loginform {
+  width: 70%;
+}
+
+.cont {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.container {
+  padding: 20px;
+}
+.pwd {
+  padding: 20px;
+}
