@@ -1,0 +1,46 @@
+main {
+  margin-top: 100px;
+}
+.container {
+  margin: 40px auto;
+  align-items: center;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  border-style: double;
+  border-color: black;
+}
+.container a {
+  text-decoration: none;
+  align-self: flex-end;
+  background-color: #458458;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  margin: 10px;
+}
+.container a:hover {
+  color: black;
+  background-color: #99d1aa;
+}
+#port {
+  text-align: center;
+  font-size: 25px;
+  color: #014113;
+}
+.port {
+  margin: 20px;
+  background-color: #458458;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 5px;
+  outline: none;
+}
+td {
+  padding: 8px;
+  font-size: 20px;
+}
+.content {
+  font-size: 20px;
+}
