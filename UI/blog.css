@@ -1,0 +1,101 @@
+main {
+  margin: 100px 15px 15px 15px;
+  font-size: 1.15rem;
+}
+#head {
+  text-align: center;
+  font-size: 30px;
+}
+.image1,
+.image2 {
+  display: flex;
+  margin: 20px 0;
+}
+
+.image2 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.image2 div a {
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #458458;
+  color: white;
+  padding: 6px;
+}
+.image2 div a:hover {
+  background-color: #99d1aa;
+  color: black;
+}
+.image2 div i {
+  font-size: 23px;
+}
+.image2 div p {
+  font-size: 23px;
+  font-weight: bold;
+}
+.image1 img {
+  width: 35%;
+  height: 200px;
+}
+.image2 img {
+  width: 60%;
+  height: 200px;
+}
+.article1 {
+  font-family: sans-serif;
+  margin-left: 30px;
+  word-spacing: 5px;
+}
+.blog {
+  display: flex;
+  margin: 30px;
+}
+.icons1 {
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.icons1 a {
+  text-decoration: none;
+  background-color: #458458;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.icons1 a:hover {
+  color: black;
+  background-color: #99d1aa;
+}
+.title {
+  margin: 30px;
+  font-size: 25px;
+  background-color: #458458;
+  color: white;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 30px;
+  grid-gap: 50px;
+}
+article {
+  height: 100px;
+  overflow: hidden;
+}
+#recent h3 {
+  font-size: 30px;
+  background-color: #458458;
+  color: white;
+}
+#liked h3 {
+  font-size: 30px;
+  background-color: #458458;
+  color: white;
+}
+.icons1 i {
+  font-size: 23px;
+}

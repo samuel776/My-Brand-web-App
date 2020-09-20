@@ -26,21 +26,18 @@ input[type="password"] {
   padding: 20px;
   cursor: pointer;
   margin-bottom: 30px;
- 
 }
 .cancelbtn {
   padding: 15px;
   width: 48%;
   margin-right: 10px;
   border-radius: 8px;
-  background-color: #CA655C;
-  outline:none;
-  border:none;
-
+  background-color: #ca655c;
+  outline: none;
+  border: none;
 }
-.cancelbtn:hover{
+.cancelbtn:hover {
   background-color: #f0887e;
-  
 }
 .signupbtn {
   padding: 15px;
@@ -48,15 +45,16 @@ input[type="password"] {
   margin-left: 10px;
   border-radius: 8px;
   background-color: #458458;
-  outline:none;
-  border:none;
+  outline: none;
+  border: none;
 }
-.signupbtn:hover{
-    background-color:#37a859 ;
+.signupbtn:hover {
+  background-color: #37a859;
 }
 h1 {
   margin: 62px 0px;
 }
 hr {
-    border: 1px solid rgb(112, 108, 108);
-    margin-bottom: 25px;
+  border: 1px solid rgb(112, 108, 108);
+  margin-bottom: 25px;
+}
