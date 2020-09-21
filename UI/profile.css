@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  margin-left: 280px;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #99d1aa;
+  padding: 25px;
+  color: white;
+  font-size: 30px;
+}
+.topnav i {
+  font-size: 45px;
+}
+.admin {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 100px;
+}
+.adim {
+  display: flex;
+}
+.adim a {
+  text-decoration: none;
+  color: white;
+}
+.adim a:hover {
+  color: black;
+}
+.numbermess {
+  display: flex;
+}
+.numbernot {
+  display: flex;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+.navigation a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: white;
+}
+.navigation i {
+  font-size: 30px;
+  color: white;
+  padding: 10px 0px;
+}
+
+.sidenav {
+  background-color: #458458;
+  width: 289px;
+  padding: 40px;
+  position: fixed;
+  z-index: 100;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  color: white;
+}
+.sidenav a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 5px;
+  border-radius: 6px;
+}
+.sidenav a:hover {
+  color: black;
+  background-color: #99d1aa;
+}
+.sidenav h3 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.prof {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.dash {
+  display: flex;
+  margin: 15px 0px;
+}
+.dash p {
+  margin-left: 15px;
+}
+.page {
+  display: flex;
+  margin: 15px 0px;
+}
+.reg {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.log {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.art {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.notif {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.mess {
+  display: flex;
+  margin: 15px 0px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0 22px 0;
+  display: inline-block;
+  border: 1px solid black;
+  background: white;
+  border-radius: 8px;
+}
+.container {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  font-family: sans-serif;
+  margin: 40px 70px;
+}
+.upload {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+.upload i {
+  font-size: 150px;
+  color: #458458;
+}
+input[type="file"],
+[type="submit"] {
+  padding: 5px;
+}
