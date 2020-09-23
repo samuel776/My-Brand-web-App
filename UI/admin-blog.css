@@ -1,0 +1,76 @@
+#head {
+  text-align: center;
+  font-size: 30px;
+}
+.image1 {
+  display: flex;
+  margin: 20px 0;
+}
+.image1 img {
+  width: 35%;
+  height: 200px;
+}
+.article1 {
+  font-family: sans-serif;
+  margin-left: 30px;
+  word-spacing: 5px;
+}
+.blog {
+  display: flex;
+  margin: 30px;
+}
+.icons1 {
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.title {
+  margin: 30px;
+  font-size: 25px;
+  background-color: #458458;
+  color: white;
+}
+article {
+  height: 100px;
+  overflow: hidden;
+}
+.icons1 i {
+  font-size: 50px;
+}
+.view {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 50px;
+}
+.view a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.view a:hover {
+  color: black;
+  font-weight: bold;
+}
+.add {
+  background-color: #458458;
+  padding: 5px;
+  border-radius: 5px;
+}
+.add:hover {
+  background-color: #1d532d;
+  color: black;
+}
+.add i {
+  font-size: 35px;
+  color: white;
+}
+.posts {
+  background-color: #458458;
+  padding: 5px;
+  border-radius: 5px;
+}
+.posts:hover {
+  background-color: #1d532d;
+  color: black;
+}

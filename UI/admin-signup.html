@@ -8,7 +8,8 @@
       src="https://kit.fontawesome.com/629d60a3b7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="Profile.css" />
+    <link rel="stylesheet" href="dashboardnav.css" />
+    <link rel="stylesheet" href="admin-signup.css" />
   </head>
   <body>
     <header>
@@ -18,24 +19,26 @@
           <i class="far fa-caret-square-down"></i>
           <p>Dashboard</p>
         </div>
-        <a href="index.html">Home</a><br />
+        <a href="">Home</a><br />
         <a href="">Settings</a>
         <div class="navigation">
           <div class="prof">
-            <i class="far fa-user-circle"></i><a href="profile.html">Profile</a>
+            <i class="far fa-user-circle"></i><a href="">Profile</a>
           </div>
-
+          <div class="reg">
+            <i class="far fa-user"></i><a href="">Register</a>
+          </div>
+          <div class="log">
+            <i class="fas fa-sign-in-alt"></i><a href="">Log in</a>
+          </div>
           <div class="art">
-            <i class="fas fa-folder-plus"></i
-            ><a href="admin-blog.html">Article</a>
+            <i class="fas fa-folder-plus"></i><a href="">Article</a>
           </div>
           <div class="notif">
-            <i class="far fa-bell"></i
-            ><a href="notification.html">Notifications</a>
+            <i class="far fa-bell"></i><a href="">Notifications</a>
           </div>
           <div class="mess">
-            <i class="fas fa-envelope-open-text"></i
-            ><a href="message.html">Messages</a>
+            <i class="fas fa-envelope-open-text"></i><a href="">Messages</a>
           </div>
         </div>
       </div>
@@ -59,7 +62,8 @@
       </div>
       <form>
         <div class="container">
-          <h1>Edit Profile</h1>
+          <h1>Sign Up as Admin</h1>
+          <p>Please fill in this form to create an account.</p>
 
           <label for="name"><b>Name</b></label>
           <input
@@ -71,32 +75,43 @@
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required />
 
-          <label for="cphone"><b>Cell Phone</b></label>
+          <label for="psw"><b>Password</b></label>
           <input
-            type="text"
-            placeholder="Enter Phone number"
-            name="phone number"
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
             required
           />
 
-          <label for="location"><b>Location</b></label>
+          <label for="psw-repeat"><b>Confirm Password</b></label>
           <input
-            type="text"
-            placeholder="Enter you Location"
-            name="text"
+            type="password"
+            placeholder="confirm Password"
+            name="psw-repeat"
             required
           />
+          <div class="remcheck">
+            <label>
+              <input
+                type="checkbox"
+                checked="checked"
+                name="remember"
+                style="margin-bottom: 15px"
+              />
+              Remember me
+            </label>
+
+            <p>
+              Arleady have account?
+              <a href="login.html">login here</a>.
+            </p>
+          </div>
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
         </div>
       </form>
-      <div class="upload">
-        <i class="far fa-user-circle"></i>
-        <form>
-          <label for="myfile"></label>
-          <input type="file" id="myfile" name="myfile" /><br />
-          <input type="submit" value="Upload" />
-        </form>
-      </div>
     </main>
-    <footer></footer>
   </body>
 </html>
