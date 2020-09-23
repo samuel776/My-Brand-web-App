@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Brand Web App</title>
+    <link rel="stylesheet" href="notification.css" />
+    <link rel="stylesheet" href="dashboardnav.css" />
     <script
       src="https://kit.fontawesome.com/629d60a3b7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="Profile.css" />
   </head>
   <body>
     <header>
@@ -46,57 +47,66 @@
         <div class="admin">
           <div class="numbermess">
             <i class="fas fa-envelope-open-text"></i>
-            <a href="message.html"><p>8</p></a>
+            <p><a href="message.html">8</a></p>
           </div>
           <div class="numbernot">
             <i class="far fa-bell"></i>
-            <a href="notification.html"><p>6</p></a>
+            <p><a href="notification.html">6</a></p>
           </div>
           <div class="adim">
-            <i class="far fa-user-circle"></i><a href="">Admin</a>
+            <i class="far fa-user-circle"></i><a href="profile.html">Admin</a>
           </div>
         </div>
       </div>
-      <form>
-        <div class="container">
-          <h1>Edit Profile</h1>
-
-          <label for="name"><b>Name</b></label>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            name="name"
-            required
-          />
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required />
-
-          <label for="cphone"><b>Cell Phone</b></label>
-          <input
-            type="text"
-            placeholder="Enter Phone number"
-            name="phone number"
-            required
-          />
-
-          <label for="location"><b>Location</b></label>
-          <input
-            type="text"
-            placeholder="Enter you Location"
-            name="text"
-            required
-          />
+      <div class="notification">
+        <h2>New Notifications</h2>
+        <br /><br />
+        <div class="doe">
+          <i class="far fa-user"></i>
+          <div class="doe1">
+            <div>
+              <p><b>John Doe</b></p>
+              <p><b>1hrs ago</b></p>
+            </div>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
         </div>
-      </form>
-      <div class="upload">
-        <i class="far fa-user-circle"></i>
-        <form>
-          <label for="myfile"></label>
-          <input type="file" id="myfile" name="myfile" /><br />
-          <input type="submit" value="Upload" />
-        </form>
+        <div class="doe">
+          <i class="far fa-user"></i>
+          <div class="doe1">
+            <div>
+              <p><b>John Doe</b></p>
+              <p><b>1hrs ago</b></p>
+            </div>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="doe">
+          <i class="far fa-user"></i>
+          <div class="doe1">
+            <div>
+              <p><b>John Doe</b></p>
+              <p><b>1hrs ago</b></p>
+            </div>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="doe">
+          <i class="far fa-user"></i>
+          <div class="doe1">
+            <div>
+              <p><b>John Doe</b></p>
+              <p><b>1hrs ago</b></p>
+            </div>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+        <br /><br />
+        <a href=""
+          ><p><b>View All</b></p></a
+        >
       </div>
     </main>
-    <footer></footer>
   </body>
 </html>
