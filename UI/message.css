@@ -1,0 +1,26 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.doe {
+  display: flex;
+  margin-bottom: 23px;
+}
+.doe i {
+  font-size: 35px;
+}
+.doe div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.doe1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 23px;
+}

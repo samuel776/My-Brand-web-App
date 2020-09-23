@@ -18,7 +18,7 @@ function validation() {
     error_message.innerHTML = text;
     return false;
   }
-  if (phone.length < 10) {
+  if (phone.length < 10 && typeof phone !== "number") {
     text = "Please Enter a valid phone number";
     error_message.innerHTML = text;
     return false;
