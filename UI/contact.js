@@ -6,6 +6,8 @@ function validation() {
   var error_message = document.getElementById("error_message");
   var text;
   error_message.style.padding = "10px";
+  error_message.style.display = "flex";
+  setTimeout(() => (error_message.style.display = "none "), 3000);
 
   if (name.length < 3 && name === "") {
     text = " Name should have greater than 3 characters";
