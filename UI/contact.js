@@ -26,7 +26,7 @@ function validation() {
     return false;
   }
   if (message.length <= 20) {
-    text = " Please your subject is too small";
+    text = "Message shoul be greater than 20 characters";
     error_message.innerHTML = text;
     return false;
   }

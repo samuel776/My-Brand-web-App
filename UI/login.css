@@ -5,6 +5,7 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 60%;
+  min-height: 65vh;
 }
 input[type="text"],
 input[type="password"] {
