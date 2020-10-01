@@ -122,10 +122,19 @@ button:hover {
 }
 .container #error_message {
   margin-bottom: 20px;
-  padding: 0;
+  padding: 10px;
   background-color: rgb(247, 134, 134);
   border-radius: 20px;
   text-align: center;
   font-size: 20px;
   transition: all 0.5s ease;
+  display: none;
+}
+.alert {
+  text-align: center;
+  padding: 10px;
+  background-color: #78c879;
+  color: white;
+  margin-bottom: 10px;
+  display: none;
 }
