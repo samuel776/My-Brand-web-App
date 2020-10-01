@@ -10,6 +10,9 @@
     ></script>
     <link rel="stylesheet" href="h-f.css" />
     <link rel="stylesheet" href="signup.css" />
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
   </head>
   <body>
     <header>
@@ -30,7 +33,7 @@
       </nav>
     </header>
     <main>
-      <form>
+      <form id="signupform">
         <div class="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
@@ -40,17 +43,27 @@
             type="text"
             placeholder="Enter your name"
             name="name"
+            id="name"
             required
           />
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+            autocomplete="username"
+          />
 
           <label for="psw"><b>Password</b></label>
           <input
             type="password"
             placeholder="Enter Password"
             name="psw"
+            id="password"
             required
+            autocomplete="new-password"
           />
 
           <label for="psw-repeat"><b>Confirm Password</b></label>
@@ -58,7 +71,9 @@
             type="password"
             placeholder="confirm Password"
             name="psw-repeat"
+            id="confpassword"
             required
+            autocomplete="new-password"
           />
           <div class="remcheck">
             <label>
@@ -80,6 +95,7 @@
             <button type="button" class="cancelbtn">Cancel</button>
             <button type="submit" class="signupbtn">Sign Up</button>
           </div>
+          <div id="error_message"></div>
         </div>
       </form>
     </main>
@@ -91,7 +107,7 @@
           <label for="email">Email:</label>
           <input
             type="email"
-            id="email"
+            id="subemail"
             placeholder="Enter email"
             name="email"
           />
@@ -111,5 +127,23 @@
     <div class="copy">
       <p>copyright 2020 Samuel Habineza</p>
     </div>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBtNinm6tDnKTRYjv7QhC3xjHK45aHXavQ",
+        authDomain: "my-brand-web-app.firebaseapp.com",
+        databaseURL: "https://my-brand-web-app.firebaseio.com",
+        projectId: "my-brand-web-app",
+        storageBucket: "my-brand-web-app.appspot.com",
+        messagingSenderId: "1016740530623",
+        appId: "1:1016740530623:web:68157209ebe8728dc1b90a",
+        measurementId: "G-VPX17Y212X",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+    </script>
+
+    <script src="signup.js"></script>
   </body>
 </html>

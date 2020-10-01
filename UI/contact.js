@@ -25,15 +25,40 @@ function validation() {
     error_message.innerHTML = text;
     return false;
   }
-  if (message.length <= 20) {
-    text = " Please your subject is too small";
+  if (message.length <= 5) {
+    text = "Message shoul be greater than 5 characters";
     error_message.innerHTML = text;
     return false;
   }
   alert("Successfully submitted");
   return true;
 }
-document.querySelector("form").onsubmit = (e) => {
+document.querySelector("#myform").onsubmit = (e) => {
   e.preventDefault();
   validation();
 };
+const myform = document.querySelector("#myform");
+console.log(myform);
+myform.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = myform["name"].value;
+  const email = myform["email"].value;
+  const phone = myform["phone"].value;
+  const message = myform["message"].value;
+
+  db.collection("My-Brand-web-App")
+    .doc("messages")
+    .set({
+      name,
+      email,
+      phone,
+      message,
+    })
+    .then(function () {
+      console.log("Document successfully written!");
+    })
+    .catch(function (error) {
+      console.error("Error writing document: ", error);
+    });
+});
