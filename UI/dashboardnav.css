@@ -125,3 +125,7 @@ main {
 .homeset {
   margin-left: 70px;
 }
+.log {
+  display: flex;
+  margin: 15px 0px;
+}
