@@ -1,4 +1,6 @@
-function validation() {
+const url = "https://my-brand-web-app.herokuapp.com";
+
+function validation(options) {
   var name = document.getElementById("name").value.trim();
   var email = document.getElementById("email").value.trim();
   var password = document.getElementById("password").value.trim();
@@ -35,10 +37,10 @@ function validation() {
     return false;
   }
 }
-document.querySelector("#signupform").onsubmit = (e) => {
-  e.preventDefault();
-  validation();
-};
+// document.querySelector("#signupform").onsubmit = (e) => {
+//   e.preventDefault();
+//   validation();
+// };
 
 const signupform = document.querySelector("#signupform");
 signupform.addEventListener("submit", (e) => {
@@ -49,13 +51,42 @@ signupform.addEventListener("submit", (e) => {
   const password = signupform["password"].value;
   const confpassword = signupform["confpassword"].value;
 
-  auth.createUserWithEmailAndPassword(email, password).then(function () {
-    document.getElementById("signupform").reset();
-    document.querySelector(".alert").innerHTML =
-      "Your account has been validated!";
-    document.querySelector(".alert").style.display = "block";
-    setTimeout(function () {
-      document.querySelector(".alert").style.display = "none";
-    }, 4000);
-  });
+  const signUpData = {
+    name,
+    email,
+    password,
+  };
+  validation(signUpData);
+  // fetchData(signUpData)
+  fetch("http://localhost:3000/api/user/register", {
+    method: "POST",
+    headers:{
+      "content-type":"application/json"
+    },
+    body: JSON.stringify(signUpData),
+  })
+    .then(handleResponse)
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error));
+  console.log(signUpData);
+  // auth.createUserWithEmailAndPassword(email, password).then(function () {
+  //   document.getElementById("signupform").reset();
+  //   document.querySelector(".alert").innerHTML =
+  //     "Your account has been validated!";
+  //   document.querySelector(".alert").style.display = "block";
+  //   setTimeout(function () {
+  //     document.querySelector(".alert").style.display = "none";
+  //   }, 4000);
+  // });
 });
+function fetchData(data) {
+  console.log(data);
+}
+function handleResponse(response) {
+  let contentType = response.headers.get("content-type");
+  if (contentType.includes("application/json")) {
+    return response.json();
+  } else if (contentType.includes("text/html")) {
+    return response.text();
+  } else throw new Error("type not supported");
+}
