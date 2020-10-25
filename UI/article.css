@@ -22,12 +22,11 @@ input[type="submit"]:hover {
   color: black;
   font-weight: bold;
 }
-
-.container {
+.container { 
   border-radius: 5px;
   width: 600px;
   margin: 7% 25%;
-}
+} 
 .container h3 {
   font-size: 35px;
   text-align: center;

@@ -1,3 +1,5 @@
+const container = document.querySelector(".container")
+console.log(container)
 const url = "http://localhost:3000";
 // const savedToken = localStorage.getItem("loginToken")
 const savedToken =
@@ -21,7 +23,8 @@ const savedToken =
         </div>`
           
          })
-         
+        container.innerHTML= outPut;
        })
        .catch((error) => console.log(error)) 
   }
+  getPosts();

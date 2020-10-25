@@ -1,6 +1,8 @@
 main {
   margin: 100px 15px 15px 15px;
   font-size: 1.15rem;
+  min-height: 67vh;
+
 }
 #head {
   text-align: center;
@@ -55,21 +57,10 @@ main {
 }
 .icons1 {
   display: flex;
-  margin: 20px;
+  margin-top: 180px;
   justify-content: space-around;
   font-size: 15px;
-}
-.icons1 a {
-  text-decoration: none;
-  background-color: #458458;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-}
-.icons1 a:hover {
-  color: black;
-  background-color: #99d1aa;
-}
+} 
 .title {
   margin: 30px;
   font-size: 25px;
@@ -84,17 +75,7 @@ main {
 }
 article {
   height: 100px;
-  overflow: hidden;
-}
-#recent h3 {
-  font-size: 30px;
-  background-color: #458458;
-  color: white;
-}
-#liked h3 {
-  font-size: 30px;
-  background-color: #458458;
-  color: white;
+
 }
 .icons1 i {
   font-size: 18px;
