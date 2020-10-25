@@ -38,6 +38,17 @@ article {
 .icons1 i {
   font-size: 50px;
 }
+.icons1 a {
+  text-decoration: none;
+  background-color: #458458;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.icons1 a:hover {
+  color: black;
+  background-color: #99d1aa;
+}
 .view {
   display: flex;
   justify-content: space-between;

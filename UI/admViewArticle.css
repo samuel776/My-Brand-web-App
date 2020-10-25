@@ -1,0 +1,41 @@
+#head {
+  text-align: center;
+  font-size: 30px;
+}
+.image1 {
+  display: flex;
+  margin: 20px 0;
+}
+.image1 img {
+  width: 35%;
+  height: 200px;
+}
+.article1 {
+  font-family: sans-serif;
+  margin-left: 30px;
+  word-spacing: 5px;
+}
+.blog {
+  display: flex;
+  margin: 30px;
+}
+.icons1 {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  font-size: 30px;
+}
+.title {
+  margin: 30px;
+  font-size: 25px;
+  background-color: #458458;
+  color: white;
+}
+article {
+  height: 100px;
+
+}
+
+
+
+
