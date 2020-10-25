@@ -1,3 +1,4 @@
+const url = "http://localhost:3000";
 function validation() {
   var email = document.getElementById("email").value.trim();
   var password = document.getElementById("password").value.trim();
@@ -29,8 +30,10 @@ loginform.addEventListener("submit", (e) => {
   e.preventDefault();
   const email = loginform["email"].value;
   const password = loginform["password"].value;
-  fetch(
-    "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBtNinm6tDnKTRYjv7QhC3xjHK45aHXavQ",
+
+
+  fetch(`${url}/api/user/login`
+    ,
     {
       method: "POST",
       headers: {
@@ -43,7 +46,10 @@ loginform.addEventListener("submit", (e) => {
     }
   )
     .then((res) => res.json())
-    .then((data) => console.log(data))
+    .then((data) => {
+      console.log(data)
+      
+    })
     .catch((error) => console.log(error));
   document.getElementById("loginform").reset();
 
