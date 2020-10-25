@@ -4,20 +4,20 @@ const url = "http://localhost:3000";
 const savedToken =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjkxMGRjMGJlMmViNjBlZWZhMTAzYTAiLCJpYXQiOjE2MDMzNDIwMDN9.Yvrm7BMHbwHmILPFzvFBWTYPK-Q49Dcz_vKtRopeQVI";
 
-  function getPosts(){
-    fetch(`${url}/posts`, {
-      method: "GET",
-      headers: {
-        "content-type": "application/json",
-        "auth-token": savedToken,
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        let outPut = "";
-        console.log(data);
-        data.forEach((post)=>{
-          outPut += `<div class="container">
+function getPosts() {
+  fetch(`${url}/posts`, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json",
+      "auth-token": savedToken,
+    },
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      let outPut = "";
+      console.log(data);
+      data.forEach((post) => {
+        outPut += `<div class="container">
           <div class="title"> 
             <p><b>${post.title}</b></p>
           </div>
@@ -35,27 +35,37 @@ const savedToken =
                   </p>
                 </article>
                 <div class="icons1">
-                  <i class="far fa-edit"></i>
+                  <i class="far fa-edit" onclick = "directPage('${post._id}')"></i>
                   <i class="far fa-trash-alt" onclick = "deletePost('${post._id}')"></i>
                    <a href="admViewArticle.html">View more..</a> 
                 </div>
               </div>
             </div> 
-        </div>`
-          
-         })
-          container.innerHTML = outPut;
-       })
-       .catch((error) => console.log(error)) 
-  }
-  getPosts();
-  function deletePost(id){
-    fetch(`${url}/posts/${id}`, {
-      method: "DELETE",
-      headers: {
-        "content-type": "application/json",
-        "auth-token": savedToken,
-      },
+        </div>`;
+      });
+      container.innerHTML = outPut;
     })
-    .then(data =>{location.reload()})
-  }
+    .catch((error) => console.log(error));
+}
+getPosts();
+
+function deletePost(id) {
+  fetch(`${url}/posts/${id}`, {
+    method: "DELETE",
+    headers: {
+      "content-type": "application/json",
+      "auth-token": savedToken,
+    },
+  }).then((data) => {
+    location.reload();
+  });
+}
+const submitForm = document.getElementById("myform");
+console.log(submitForm)
+
+function directPage(id) {
+  window.location.href = `article.html?id=${id}`;
+  
+   
+}
+
