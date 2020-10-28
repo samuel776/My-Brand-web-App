@@ -57,7 +57,7 @@ signupform.addEventListener("submit", (e) => {
     password,
   };
   validation(signUpData);
-  // fetchData(signUpData)
+   fetchData(signUpData)
   fetch("http://localhost:3000/api/user/register", {
     method: "POST",
     headers:{
@@ -66,9 +66,16 @@ signupform.addEventListener("submit", (e) => {
     body: JSON.stringify(signUpData),
   })
     .then(handleResponse)
-    .then((result) => console.log(result))
+    .then((result) => {
+      if(result.msg){
+      error_message.innerHTML = result.msg;
+      }else{
+        window.location.href ="login.html"
+      }
+    })
     .catch((error) => console.log(error));
   console.log(signUpData);
+  document.getElementById("signupform").reset();
   // auth.createUserWithEmailAndPassword(email, password).then(function () {
   //   document.getElementById("signupform").reset();
   //   document.querySelector(".alert").innerHTML =
