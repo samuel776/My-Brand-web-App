@@ -47,9 +47,18 @@ loginform.addEventListener("submit", (e) => {
   )
     .then((res) => res.json())
     .then((data) => {
-      console.log(data)
-      
+      console.log(data.msg)
+      localStorage.setItem("loginToken",data.token);
+      if(data.msg){
+        error_message.style.display = "block";
+        error_message.innerHTML = data.msg;
+      }else{
+        window.location.href="profile.html"
+      }
+    // document.getElementById('loginform').innerHTML = localStorage.getItem("email","hbnzsml@gmail.com")
+    console.log(localStorage)
     })
+   
     .catch((error) => console.log(error));
   document.getElementById("loginform").reset();
 
