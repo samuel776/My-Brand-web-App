@@ -1,4 +1,4 @@
-const url = "http://localhost:3000";
+const url = "https://my-brand-web-app.herokuapp.com";
 function validation() {
   var email = document.getElementById("email").value.trim();
   var password = document.getElementById("password").value.trim();
