@@ -1,6 +1,6 @@
 const container = document.querySelector("#outPut")
 
-const url = "http://localhost:3000";
+const url = "https://my-brand-web-app.herokuapp.com";
 // const savedToken = localStorage.getItem("loginToken")
 const savedToken =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjkxMGRjMGJlMmViNjBlZWZhMTAzYTAiLCJpYXQiOjE2MDMzNDIwMDN9.Yvrm7BMHbwHmILPFzvFBWTYPK-Q49Dcz_vKtRopeQVI";
