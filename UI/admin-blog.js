@@ -1,5 +1,5 @@
 const container = document.querySelector(".bigContainer");
-const url = "http://localhost:3000";
+const url = "https://my-brand-web-app.herokuapp.com";
 // const savedToken = localStorage.getItem("loginToken")
 const savedToken =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjkxMGRjMGJlMmViNjBlZWZhMTAzYTAiLCJpYXQiOjE2MDMzNDIwMDN9.Yvrm7BMHbwHmILPFzvFBWTYPK-Q49Dcz_vKtRopeQVI";
@@ -35,8 +35,8 @@ function getPosts() {
                   </p>
                 </article>
                 <div class="icons1">
-                  <i class="far fa-edit" onclick = "directPage('${post._id}')"></i>
-                  <i class="far fa-trash-alt" onclick = "deletePost('${post._id}')"></i>
+                  <i class="far fa-edit"  onclick = "myFunction(); directPage('${post._id}');" ></i>
+                  <i class="far fa-trash-alt"  onclick = "myFunction1(); deletePost('${post._id}')"></i>
                    <a href="admViewArticle.html">View more..</a> 
                 </div>
               </div>
@@ -68,4 +68,9 @@ function directPage(id) {
   
    
 }
-
+function myFunction() {
+  confirm("edit article?!");
+}
+function myFunction1() {
+  confirm("delete article?");
+}
